@@ -1,0 +1,29 @@
+1. what is normalization & standardization and how is it helpful?
+
+Normalization:
+Def: Normalization scales individual samples to have unit norm.
+formula:
+xi=xi-min(x)/max(x)-min(X)
+used for distance calculations, such as knn or neural networks.
+
+
+Standardization:
+Def: Standardization transforms data to have a mean of zero and a std of one.
+
+Formula: xi=xi-U/std
+
+used for that assumes normally distributed data or are to feature scales, such as linear regression, or SVM
+
+2. what techniques can be used to address multicollinearity in multiple linear regression?
+
+ans:) Multicollinearity:
+
+def: occurs when two or more independent variables are highly correlated, making it difficult to isolate the individual effect of each predictor.
+
+effects: inflates the variance of coefficient estimates, leading to unreliable and unstable estimates.
+Techniques to Address Multicollinearity:
+
+1. remove Highly Correlated Predictors: Identify and remove correlated predictors using correlation matrices or Variance Inflation Factor (VIF).
+2. combine Features: Create new features by combining correlated ones, such as averaging them or taking their product.
+3. principal Component Analysis (PCA): Transform features into a set of uncorrelated components.
+4. regularization Techniques: Use Ridge or Lasso regression to penalize the size of coefficients, thus reducing the impact of multicollinearity.

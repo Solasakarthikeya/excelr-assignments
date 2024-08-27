@@ -1,0 +1,37 @@
+what is the difference between precision and recall?
+
+def: precision, also known as positive predictive value, is the ratio of correctly predicted positive observations to the total predicted positives.
+
+formula:
+
+precision = true positive/true positive + false positive
+
+precision answers the question, "Of all the instances that were predicted as positive, how many were actually positive?" High precision means that the model has a low false positive rate.
+
+
+
+recall:
+
+def: recall, also known as Sensitivity or true positive rate, is the ratio of correctly predicted positive observations to all the observations in the actual class.
+
+formula: recall = true positive/true positive + false negative
+
+recall answers the question, "Of all the actual positive instances, how many were predicted correctly" high recall means that the model has a low false negative rate.
+
+
+difference: 
+-> Precision is critical when the cost of a false positive is high.
+
+-> Recall is important when the cost of a false negative is high. 
+
+
+
+2. what is cross-validation, and why is it important in binary classification?
+
+
+cross-validation is a resampling procedure used to evaluate the performance of a model on a limited data sample. the most common form of cross-validation is k-fold cross-validation.
+
+1. improves Model Generalization: Cross-validation helps ensure that the model’s performance is robust and not just tailored to a particular train-test split.
+2. prevents Overfitting: By evaluating the model on different subsets of the data, cross-validation reduces the risk of overfitting to the training data.
+3. more Reliable Performance Metrics: Provides a more accurate estimate of the model’s performance by averaging results over multiple folds.
+4. model Selection and Hyperparameter Tuning: Helps in selecting the best model and tuning hyperparameters by comparing the performance of different models/configurations on the validation sets.
